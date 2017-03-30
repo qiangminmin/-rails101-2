@@ -20,6 +20,20 @@ class PostsController < ApplicationController
   end
 
 
+  def edit
+
+     redirect_to groups_path
+   end
+
+   def destroy
+
+      flash[:alert] = "Post deleted"
+     redirect_to groups_path
+   end
+
+
+
+
   private
 
   def post_params
